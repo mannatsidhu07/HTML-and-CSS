@@ -1,0 +1,19 @@
+
+    .subscribe-button{
+        background-color:red;
+        color:white;
+        border:none;
+        height:35px;
+        width:105px;
+        border-radius:2px;
+        cursor:pointer;
+        margin-right:10px;
+        transition: opacity 1.15s;
+    }
+    .subscribe-button:hover{
+        
+        opacity:0.8;
+    }
+    .subscribe-button:active{
+        background-color:blue;
+    }

@@ -1,0 +1,127 @@
+<h1>ChromeDev tools & CSS box model</h1>
+<style>
+    .subscribe-button{
+        background-color: #d00b0b;
+        color:white;
+        border:none;
+        height:35px;
+        width:105px;
+        border-radius:2px;
+        cursor:pointer;
+        margin-right:10px;
+        transition: opacity 1.15s;
+        vertical-align: top;
+    }
+    .subscribe-button:hover{
+        
+        opacity:0.8;
+    }
+    .subscribe-button:active{
+        background-color:blue;
+    }
+</style>
+<button class="subscribe-button">subcribe</button>
+<h1>PADDING</h1><p>padding is a property that adds space on the inside of your button. for example "padding-left" adds space on the left side of the button.</p>
+<h1>VERTICaL ALIGN</h1>
+<p>When we add padding to our buttons, they get aligned based on the text, i.e. the text present inside the buttons aligns with each other rather than the buttons themselves. to fix this we use a property called vertical-align that aligns the buttons whichever way we like as here subscribe button is aligned to the top. </p>
+
+
+<br<<br><br>
+<h1>HOMEWORK</h1>
+<h3>1.Pagination</h3>
+<button class="back">Back</button>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=4646s">1</a>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=4646s">2</a>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=4646s">3</a>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=4646s">4</a>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=4646s">5</a>
+<button class="next>">Next</button>
+<h3>2.Stretch</h3>
+<style>
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+  }
+
+  .stretch-button:hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+</style>
+
+<button class="stretch-button">
+  Stretch
+</button>
+<h3>3.3-D click</h3>
+<style>
+    .button{
+        background-color: green;
+        color: white;
+        border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    box-shadow: 0px 5px 8px rgb(80, 79, 79);
+    transition:box-shadow 0.2s;
+    }
+    .button:active{
+       background-color: green;
+        color: white;
+        border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px white;
+    }
+</style>
+<button class="button">Shadow</button>
+<h3>4.Margin and padding shift</h3>
+<style>
+    .one{
+        background-color: goldenrod;
+        color:whitesmoke;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:8px;
+        padding-bottom:8px;
+        font-size:18px;
+        margin-left:10px;
+        margin-right:10px;
+        border:none;
+        font-size:18px;
+         transition: padding-right 1s,
+         padding-left 1s,
+
+        
+         margin-right 1s,
+         margin-left 1s;
+    }
+    .one:hover{
+        padding-left:25px;
+        padding-right:25px;
+        margin-right:0px;
+        margin-left:0px;
+    }
+</style>
+<button class="one">One</button>
+<button class="one">Two</button>
+<button class="one">Three</button>

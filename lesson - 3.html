@@ -1,0 +1,192 @@
+<h1>Hovers, transitions and shadows</h1>
+<style>
+    .subscribe-button{
+        background-color: #d00b0b;
+        color:white;
+        border:none;
+        height:35px;
+        width:105px;
+        border-radius:2px;
+        cursor:pointer;
+        margin-right:10px;
+        transition: opacity 1.15s;
+    }
+    .subscribe-button:hover{
+        
+        opacity:0.8;
+    }
+    .subscribe-button:active{
+        background-color:blue;
+    }
+</style>
+<button class="subscribe-button">subcribe</button>
+<h3>In the style tag, we learned how to use class to specify the attributes/properties of button. now we are to use classes to determine the behaviour of the buttton swhen we hover over them pr when we click the buttons therefore we create two new style cases for the same button, one is active when we are hovering over the button and other is active when we click on the button.<br> Then we have a property called "opacity" which makes the button a bit tranparent when we hover over it.</h3>
+<style>
+    .join-button{
+        background-color: white;
+        color:rgb(78, 166, 237);
+        height:35px;
+        width:105px;
+        border-radius:2px;
+        cursor:pointer;
+        border-color: rgb(78, 166, 237);
+        border-style:solid;
+        border-width:1px;
+        transition: background-color 1s,
+        color 1s;
+    }
+    .join-button:hover{
+        background-color: rgb(41,118,215);
+        color:white;
+      
+    }
+    .join-button:active{
+        opacity:0.5;
+    }
+    
+</style>
+<button class="join-button">join</button>
+<h3>Here we learned how to transition in the buttons. we use a css property called transition in which we can mention other properties like background color or opacity that we want to transition and mention in seconds for how long we want to transition these properties. we can write down all properties that we are to transition in one property mention spearated by commas.</h3>
+<h1>SHADOWS</h1>
+<h3>The property used for shadows is the boxshadow property.</h3>
+<h3> in box shadpw, first number determines the horizontal value of the given shadow. The second value shifts the shadow in vertical dimensions.Third value is blur which basically determines the opacity of the shadow and last property is colour.</h3>
+<style>
+    .tweet{
+        background-color: rgba(28, 144, 246, 0.853);
+        border:none;
+        color:white;
+        border-radius:17px;
+        height:35px;
+        width:105px;
+        font-weight:bold;
+        font-size:15px;
+        transition:box-shadow 1s;
+    }
+    .tweet:hover{
+          box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+    }
+</style>
+<button class="tweet">Tweet</button>
+<h1>HOMEWORK</h1>
+<h3>Use the buttons you made in previous lesson and make them have a shadow and hover and transition</h3>
+<h3>1.uber button</h3>
+<button class="uber">Request now</button>
+<style>
+    .uber{
+        background-color: black;
+        color: white;
+        height:35px;
+        width:105px;
+        transition:opacity 0.2s;
+    }
+    .uber:hover{
+        opacity:0.8;
+    }
+</style>
+<h3>2.amazon button</h3>
+<button class="amazon">Add to Cart</button>
+<style>
+    .amazon{
+        background-color: rgb(252, 224, 96);
+        color:black;
+        height:28px;
+        width:180px;
+        border-radius:14px;
+        cursor:pointer;
+        border:none;
+        transition: background-color 0.3s;
+    }
+    .amazon:hover{
+        background-color:rgb(247, 180, 9);
+    }
+</style>
+<h3>3.Github button</h3>
+<button class="github">Sign up</button>
+<style>
+    .github{
+        background-color: rgb(46,164,79);
+        color:white;
+        font-weight:bold;
+        height:35px;
+        width:70px;
+        border-radius:5px;
+        border:none;
+    }
+    .github:hover{
+        box-shadow:0px 5px 10px rgba(34, 23, 2, 0.469) ;
+    }
+</style>
+<h3>4.Bootstrap</h3>
+<button class="bootstrap">Get started</button>
+<style>
+    .bootstrap{
+        background-color: rgb(121,82,179);
+        color:white;
+        font-weight:bold;
+        height:40px;
+        width:120px;
+        border-radius:3px;
+        border:none;
+        margin-right:7px;
+        transition:background-color 0.3s;
+    }
+    .bootstrap:hover{
+        background-color:rgb(83, 24, 138);
+    }
+</style>
+<button class="bootstrap1">Download</button>
+<style>
+    .bootstrap1{
+        background-color: white;
+        color:rgb(108,117,125);
+        font-weight:bold;
+        height:40px;
+        width:120px;
+        border-radius:3px;
+        border-color:rgb(108,117,125);
+        margin-right:10px;
+        border-style:solid;
+        transition: background-color 0.25s,
+        color 0.25s;
+    }
+    .bootstrap1:hover{
+        background-color:rgb(108,117,125);
+        color:white;
+    }
+</style>
+<h3>5.Linkedin</h3>
+<button class="linkedin">Apply on company website</button>
+<style>
+    .linkedin{
+        background-color: rgb(10,102,194);
+        color:white;
+        font-weight:bold;
+        height:34px;
+        width: 250px;
+        border-radius:17px;
+        border:none;
+        margin-right:10px;
+        transition:background-color 0.3s;
+    }
+    .linkedin:hover{
+        background-color:rgb(14, 64, 164);
+    }
+</style>
+<button class="linkedin1">Save</button>
+<style>
+    .linkedin1{
+        background-color: white;
+        color:rgb(10,102,194);
+        font-weight:bold;
+        height:34px;
+        width:100px;
+        border-radius:17px;
+        border-width:0.6px;
+        border-color: rgb(10,102,194);
+        border-style:solid;
+        transition:border-width 0.25s;
+    }
+    .linkedin1:hover{
+        border-width: 2px;
+            }
+</style>
