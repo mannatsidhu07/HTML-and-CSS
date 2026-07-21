@@ -1,19 +1,19 @@
 
-    .subscribe-button{
-        background-color:red;
-        color:white;
-        border:none;
-        height:35px;
-        width:105px;
-        border-radius:2px;
-        cursor:pointer;
-        margin-right:10px;
-        transition: opacity 1.15s;
+   
+    .para{
+        font-size: 30px;
+        font-weight:bold;
+        text-align: center;
+        font-family:Montserrat;
+        margin-bottom:10px;
     }
-    .subscribe-button:hover{
-        
-        opacity:0.8;
+    .para1{
+        font-size:15px;
+        text-align: center;
+        font-family:montserrat;
+        margin-top:10px;
     }
-    .subscribe-button:active{
-        background-color:blue;
+    .s{
+        text-decoration:underline;
+
     }
