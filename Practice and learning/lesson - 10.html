@@ -35,10 +35,13 @@
     }
 
     .mutual{
-        width:15px;
-        height:15px;
-        border-radius: 7px;
+        width:20px;
+        height:20px;
+        border-radius: 10px;
         border:none;
+        display:inline-block;
+        margin-left:6px;
+        vertical-align: bottom;
     }
 
     .name{
@@ -46,14 +49,38 @@
         margin-top: 0px;
         margin-bottom:0px;
         display:inline-block;
-        font: weight 500px;
+        font-weight: bold;
+        margin-left:6px;
+        margin-bottom:0px;
     }
 
-    .name{
+    .friends{
+        display:inline-block;
+        padding-left:3px;
+        margin-bottom:0px;
+        vertical-align: middle;
+        margin-top:15px;
+        color:gray;
+        font-size: 14px;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .add{
+        background-color: rgb(5, 151, 242);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+        border:none;
+        height:30px;
+        width:100px;
+        border-radius:4px;
+        margin-top:5px;
+        margin-left:6px;
+    }
+
+    .p{
         margin-top: 0px;
         margin-bottom:0px;
-        display:inline-block;
+        padding-left:6px;
     }
 </style>
 </head>
@@ -68,24 +95,31 @@
     <div class="st">
          <img class="cat1" src="oliver.jpg">
          <p class="name">Oliver</p>
+         <div>
          <img class="mutual" src="mutual.jpg">
          <p class="friends"> 2 mutual friends</p>
+         </div>
+         
          <button class="add">Add Friend</button>
     </div>
 
     <div class="st">
         <img class="cat1" src="mimi.jpg">
          <p class="name">Mimi</p>
+         <div>
          <img class="mutual" src="mutual.jpg">
          <p class="friends"> 3 mutual friends</p>
+         </div>
          <button class="add">Add Friend</button>
     </div>
 
     <div class="st">
          <img class="cat1" src="rex.jpg">
          <p class="name">Rex</p>
+         <div>
          <img class="mutual" src="mutual.jpg">
          <p class="friends"> 4 mutual friends</p>
+         </div>
          <button class="add">Add Friend</button>
     </div>
 
