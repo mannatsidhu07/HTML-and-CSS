@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>
         Grid practice
     </title>
+    <style>
+     
+
+    .st{
+        height:250px;
+        width:150px;
+        box-shadow: 0px 0px 8px gray;
+    
+        margin-right: 10px;
+    }
+    
+    .cat1{
+        width:150px;
+        height:150px;
+        object-fit: center;
+        object-fit: cover;
+    }
+
+    .mutual{
+        width:20px;
+        height:20px;
+        border-radius: 10px;
+        border:none;
+        
+        margin-left:6px;
+        vertical-align: bottom;
+    }
+
+    .name{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 0px;
+        margin-bottom:0px;
+        
+        font-weight: bold;
+        margin-left:6px;
+        margin-bottom:0px;
+    }
+
+    .friends{
+        display:inline-block;
+        padding-left:3px;
+        margin-bottom:0px;
+        vertical-align: middle;
+        margin-top:15px;
+        color:gray;
+        font-size: 14px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .add{
+        background-color: rgb(5, 151, 242);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:white;
+        border:none;
+        height:30px;
+        width:100px;
+        border-radius:4px;
+        margin-top:5px;
+        margin-left:6px;
+    }
+
+    .p{
+        margin-top: 0px;
+        margin-bottom:0px;
+        padding-left:6px;
+    }
+    </style>
 </head>
-<body>
+<body style="padding-bottom: 1000px;
+">
 <h1>CSS GRID</h1>
 <h4>we learn a new way of incorporating CSS into our html file. Using the "div" tag and adding the "style" attribute to the tag, we can give the content in that div tag a specific style as we desire.</h4>
+<h4>in a grid, to spedify the width of your column you can use a unit called "fr", which is used to fill the column into all the free space we have left</h4>
+<h4>The prblems with inline block are:
+    1.It counts the spaces between the divs and it shows up 
+    2.The divs are not aligned vertically.
+</h4>
+<h4>1. in order to see the end of the website clealry we do inside padding in the body tag, it creates more space after the end of our elements so that we cn properly scroll down and see the element clearly<br>2.In order to creaate a space between your grids, you need to use an attribut in the style called "column gap"</h4>
 
 <div style="display:grid;
 grid-template-columns: 100px 100px;">
@@ -37,6 +114,91 @@ grid-template-columns: 100px 100px 1fr;">
     ">div1
     </div>
     </div>
+</div>
+
+
+
+
+<h1>HOMEWORK</h1>
+<h4>1.Create a grid with 2 columns with widths 200 px and 75 px.</h4>
+<div style="display:grid;
+grid-template-columns: 200px 75px;;">
+    <div style="
+    background-color: lightblue;">
+    200px</div>
+    <div style="
+    background-color: lightpink;">
+    75px</div>
+</div>
+<h4>2.Create a grid with 3 columns. Width = 50px and then remaining space and then 75px</h4>
+<div style="display:grid;
+grid-template-columns:50px 1fr 75px;">
+    <div style="background-color:lightblue;">
+        col 1
+    </div>
+    <div style="background-color:lightpink;">
+        col 2
+    </div>
+    <div style="background-color:lightblue;">
+        col 3
+    </div>
+    </div>
+<h4>3.Create a grid with 4 equal columns that take up the entire page, space between columns=20px, space between rows=10px.</h4>
+<div style="display:grid;
+grid-template-columns : 1fr 1fr 1fr 1fr;
+column-gap: 20px;
+row-gap: 10px; "
+>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+    <div style="background-color: cornflowerblue;">col</div>
+</div>
+<h4>4.Create the given style using grids</h4>
+   
+<div style="display:grid;
+grid-template-columns: 150px 150px 150px ;
+column-gap:20px;
+">
+        <div >
+
+            <div class="st">
+                <img class="cat1" src="oliver.jpg">
+                <p class="name">Oliver</p>
+                <div>
+                <img class="mutual" src="mutual.jpg">
+                <p class="friends"> 2 mutual friends</p>
+                </div>
+                
+                <button class="add">Add Friend</button>
+            </div>
+
+            <div class="st">
+                <img class="cat1" src="mimi.jpg">
+                <p class="name">Mimi</p>
+                <div>
+                <img class="mutual" src="mutual.jpg">
+                <p class="friends"> 3 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+
+            <div class="st">
+                <img class="cat1" src="rex.jpg">
+                <p class="name">Rex</p>
+                <div>
+                <img class="mutual" src="mutual.jpg">
+                <p class="friends"> 4 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+
+
+        </div>
 </div>
 </body>
 </html>
