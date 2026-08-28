@@ -1,0 +1,62 @@
+.grid{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+}
+
+.profile{
+    width:200px;
+    box-shadow:0px 0px 5px gray;
+    vertical-align: top;
+    margin-right:15px;
+}
+
+.profile-picture{
+    width: 200px;
+    height:200px;
+    object-fit:cover;
+    margin-bottom:12px;
+}
+
+.mutual-frens{
+    width:30px;
+    height:30px;
+    object-fit: cover;
+    border-radius:15px;
+    vertical-align:middle;
+    margin-right:4px;
+}
+
+.mutual-frens-row{
+    display:grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    margin-left:8px;
+    margin-bottom:10px;
+}
+
+.add-fren {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+.name{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    margin-bottom:5px;
+    margin-top:0px;
+}
