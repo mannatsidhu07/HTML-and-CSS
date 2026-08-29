@@ -3,6 +3,64 @@
     <title>
         Flexbox practice
     </title>
+    <style>
+        .search-bar{
+            width:500px;
+            height:30px;
+            border:none;
+            border-radius:15px;
+        }
+        .download-button{
+            border-width:1px;
+            border-color:white;
+            border-style: solid;
+            height:30px;
+            width:80px;
+            background-color:rgb(138, 103, 149);
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-right:7px;
+        }
+        .imgpfp{
+            width:40px;
+            height:40px;
+            border-radius:20px;
+            object-fit: cover;
+            object-position:center;
+        }
+        .name{
+            margin-top:0px;
+            margin-bottom:0px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            font-size:12px;
+        }
+        .description{
+            margin-top:3px;
+            margin-bottom:3px;
+            font-family: arial;
+            color:grey;
+             font-size:12px;
+        }
+        .popularity{
+            margin-top:0px;
+            margin-bottom:3px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:grey;
+             font-size:12px;
+        }
+        .follow-button{
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            font-size:15px;
+            background-color:rgb(24, 129, 248);
+            width:80px;
+            height:30px;
+            border-radius:15px;
+            border:none;
+        }
+    </style>
 </head>
 <body style="padding-bottom:1000px;">
     
@@ -107,5 +165,166 @@
     background-color: lightpink;
     ">item2</div>
 </div>
+
+
+<h4>Q5</h4>
+<div style="display:grid;
+border-width:1px;
+border-color:gray;
+border-style:solid;
+border-radius:5px;
+width:300px;
+height:100px;
+padding-bottom:6px;
+padding-top:6px;
+padding-right:6px;
+padding-left:6px;">
+<div style="
+display:flex;
+flex-direction: row;
+align-items:center;
+justify-content:space-between;">
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    width : 200px; 
+    ">Home</div>
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:white;
+    background-color: rgb(55, 162, 255);
+    border-width:1px;
+    border-color:rgb(55, 162, 255);
+    border-radius:5px;
+    width:30px;
+    text-align: center;">14</div>
+</div>
+<div style="
+display:flex;
+flex-direction: row;
+align-items:center;
+justify-content:space-between;">
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    width : 200px; 
+    ">Notifications</div>
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:white;
+    background-color: rgb(55, 162, 255);
+    border-width:1px;
+    border-color:rgb(55, 162, 255);
+    border-radius:5px;
+    width:30px;
+    text-align: center;">3</div>
+</div>
+<div style="
+display:flex;
+flex-direction: row;
+align-items:center;
+justify-content:space-between;">
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    width : 200px; 
+    ">Messages</div>
+    <div style="
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:white;
+    background-color: rgb(55, 162, 255);
+    border-width:1px;
+    border-color:rgb(55, 162, 255);
+    border-radius:5px;
+    width:30px;
+    text-align: center;">5</div>
+</div>
+</div>
+
+
+<h4>Q6</h4>
+<div style="
+display:flex;
+flex-direction: row;
+height: 50px;
+align-items:center;
+justify-content: space-between;
+background-color: rgb(138, 103, 149);
+">
+    
+    <div style="color:white;
+    width:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:7px;">Home
+    </div>
+
+    <div style="width:800px;
+    "> 
+        <input class="search-bar" type="text" placeholder="Search">
+    </div>
+
+    <div style="color:white;
+    
+    ">
+    <button class="download-button"> Download</button>
+    </div>
+</div>
+
+<h4>Q7</h4>
+<div style="display:grid;
+">
+
+    <div style="display:flex;
+    flex-direction:row;
+    align-items:center;
+    height:50px;
+    justify-content:space-between;
+    width:300px;
+    ">
+    <div style="width:150px;
+    "><img class="imgpfp" src="oliver.jpg"></div>
+    <div >
+       <p class="name">Oliver</p>
+    <p class="description">the cat</p>
+    <p class="popularity">popular</p></div>
+    <div><button class="follow-button">Follow</button></div>
+    </div>
+
+     <div style="display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    height:50px;
+    width:150px;
+    ">
+    <div style="width:50px;
+    "><img class="imgpfp" src="oliver.jpg"></div>
+    <div style="height:55px;"><p class="name">Oliver</p>
+    <p class="description">the cat</p>
+    <p class="popularity">popular</p></div>
+    <div><button class="follow-button">Follow</button></div>
+    </div>
+
+     <div style="display:flex;
+    flex-direction:row;
+    align-items:center;
+    height:50px;
+    width:150px;
+    justify-content: space-between;
+    ">
+    <div style="width:50px;
+    "><img class="imgpfp" src="oliver.jpg"></div>
+    <div style="height:55px;
+    width:300px;"><p class="name">Oliver</p>
+    <p class="description">the cat</p>
+    <p class="popularity">popular</p></div>
+    <div style="width:300px;"><button class="follow-button">Follow</button></div>
+    </div>
+
+</div>
+
 </body>
 </html>
